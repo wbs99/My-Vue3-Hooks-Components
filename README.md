@@ -7,3 +7,13 @@ pnpm i
 rm -rf .git
 git remote remove origin
 ```
+
+Components 
+- Bars.vue 条形图组件
+- LineChart 折线图组件
+- PieChart 饼图组件
+- svg Icon 组件
+- MenuButton 菜单切换按钮
+
+Hooks
+- useTimeCount 倒计时

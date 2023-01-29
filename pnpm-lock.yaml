@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@vitejs/plugin-vue': 3.1.0
+  echarts: 5.4.1
   pinia: 2.0.23
   sass: 1.55.0
   svgo: 2.8.0
@@ -13,6 +14,7 @@ specifiers:
   vue-tsc: 0.40.4
 
 dependencies:
+  echarts: registry.npmmirror.com/echarts/5.4.1
   pinia: registry.npmmirror.com/pinia/2.0.23_3wx4hvlpf33h4r5e7sgliqloou
   sass: registry.npmmirror.com/sass/1.55.0
   svgo: registry.npmmirror.com/svgo/2.8.0
@@ -477,6 +479,15 @@ packages:
       dom-serializer: registry.npmmirror.com/dom-serializer/1.4.1
       domelementtype: registry.npmmirror.com/domelementtype/2.3.0
       domhandler: registry.npmmirror.com/domhandler/4.3.1
+    dev: false
+
+  registry.npmmirror.com/echarts/5.4.1:
+    resolution: {integrity: sha512-9ltS3M2JB0w2EhcYjCdmtrJ+6haZcW6acBolMGIuf01Hql1yrIV01L1aRj7jsaaIULJslEP9Z3vKlEmnJaWJVQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/echarts/-/echarts-5.4.1.tgz}
+    name: echarts
+    version: 5.4.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+      zrender: registry.npmmirror.com/zrender/5.4.1
     dev: false
 
   registry.npmmirror.com/entities/2.2.0:
@@ -1059,6 +1070,12 @@ packages:
     dependencies:
       is-number: registry.npmmirror.com/is-number/7.0.0
 
+  registry.npmmirror.com/tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz}
+    name: tslib
+    version: 2.3.0
+    dev: false
+
   registry.npmmirror.com/tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz}
     name: tslib
@@ -1163,3 +1180,11 @@ packages:
     name: yallist
     version: 4.0.0
     dev: true
+
+  registry.npmmirror.com/zrender/5.4.1:
+    resolution: {integrity: sha512-M4Z05BHWtajY2241EmMPHglDQAJ1UyHQcYsxDNzD9XLSkPDqMq4bB28v9Pb4mvHnVQ0GxyTklZ/69xCFP6RXBA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/zrender/-/zrender-5.4.1.tgz}
+    name: zrender
+    version: 5.4.1
+    dependencies:
+      tslib: registry.npmmirror.com/tslib/2.3.0
+    dev: false

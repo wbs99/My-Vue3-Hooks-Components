@@ -1,13 +1,11 @@
 <template>
   <div>
-    <div>home page</div>
-
-    <router-link to="/about">about</router-link>
-    <Icon name='add' />
-    <br>
+    <Icon name='mangosteen' class="icon" />
     <CountDown />
     <MenuButton v-model:collapse='menuStatus' />
-    <ImgLoop />
+    <Bars />
+    <LineChart />
+    <PieChart />
 
     <router-view></router-view>
   </div>
@@ -15,9 +13,12 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-import ImgLoop from '../components/ImgLoop.vue';
+import Bars from '../components/Bars.vue';
 import MenuButton from '../components/MenuButton.vue';
 import CountDown from '../demos/CountDown.vue';
+import LineChart from '../components/LineChart.vue'
+import PieChart from '../components/PieChart.vue'
+
 
 
 const menuStatus = ref(true)
