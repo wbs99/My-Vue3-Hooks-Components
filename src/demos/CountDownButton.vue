@@ -1,3 +1,5 @@
+<!-- 带有倒计时的并禁止点击的按钮 -->
+
 <template>
   <div>
     <button :disabled="isCounting" @click="onClickSendValidationCode">
