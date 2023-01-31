@@ -65,26 +65,3 @@ export const useSwiper = (element: Ref<HTMLElement | undefined>, options?: Optio
   })
   return { swiping, direction, distance }
 }
-
-
-// 使用示例
-
-// <div ref="divRef"></div>
-
-// <script lang="ts" setup >
-// import { watchEffect } from 'vue';
-// import { useSwiper } from '../hooks/useSwiper';
-// import { throttle } from '../shared/throttle'
-
-// const divRef = ref<HTMLElement>()
-// const { direction, swiping } = useSwiper(divRef, { beforeStart: e => e.preventDefault() })
-// const throttleSwiper = throttle(() => {
-//   console.log('你好')
-// }, 500)
-
-// watchEffect(() => {
-//   if (swiping.value && direction.value === 'left') {
-//     throttleSwiper()
-//   }
-// })
-// < /script>
