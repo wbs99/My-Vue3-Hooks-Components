@@ -2,12 +2,12 @@
   <div>
     <Icon name='mangosteen' class="icon" />
     <CountDownButton />
-
     <router-view></router-view>
   </div>
 </template>
 
 <script lang="ts" setup>
+import FloatButton from '../components/FloatButton.vue';
 import CountDownButton from '../demos/CountDownButton.vue';
 
 </script>

@@ -15,6 +15,7 @@ Components
 - svg Icon 组件
 - MenuButton 菜单切换按钮
 - BackTop 返回顶部
+- FloatButton 固定浮动按钮
 
 Hooks
 - useTimeCount 倒计时
