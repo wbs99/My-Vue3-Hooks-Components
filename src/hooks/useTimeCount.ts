@@ -14,8 +14,5 @@ export const useTimeCount = (time: number) => {
       }
     }, 1000)
   }
-  const onClickSendValidationCode = () => {
-    startCount()
-  }
   return { startCount, isCounting, count }
 }

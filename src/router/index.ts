@@ -14,6 +14,13 @@ const routes: RouteRecordRaw[] = [
   },
   { path: '/first', component: () => import("../views/First.vue") },
   { path: '/about', component: () => import("../views/About.vue") },
+  { path: '/useLongPress', component: () => import("../demos/LongPressDemo.vue") },
+  { path: '/CountDownButton', component: () => import("../demos/CountDownButton.vue") },
+  { path: '/SwiperDemo', component: () => import("../demos/SwiperDemo.vue") },
+  { path: '/BackTop', component: () => import('../components/BackTop.vue') },
+  { path: '/bars', component: () => import('../components/Bars.vue') },
+  { path: '/floatButton', component: () => import('../demos/FloatButtonDemo.vue') },
+  { path: '/menuButton', component: () => import('../demos/MenuButtonDemo.vue') },
   { path: "/:pathMatch(.*)", component: () => import("../views/NotFound.vue") },
 ]
 const history = createWebHashHistory()

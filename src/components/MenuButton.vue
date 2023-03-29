@@ -7,7 +7,6 @@
 const props = defineProps({
   collapse: {
     type: Boolean,
-    required: true,
     default: true
   },
 });
@@ -58,15 +57,3 @@ $menu-button-color: #686870;
   }
 }
 </style>
-
-
-
-<!-- 使用示例
-<template>
-    <MenuButton v-model:collapse='menuStatus' />
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue';
-const menuStatus = ref(true)
-</script> -->

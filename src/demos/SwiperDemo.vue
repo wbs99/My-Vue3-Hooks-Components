@@ -1,4 +1,5 @@
 <template>
+  <h4>观察控制台 console 即可</h4>
   <div ref="divRef" class="wrapper"></div>
 </template>
 
