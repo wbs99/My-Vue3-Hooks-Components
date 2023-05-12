@@ -21,6 +21,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/bars', component: () => import('../components/Bars.vue') },
   { path: '/floatButton', component: () => import('../demos/FloatButtonDemo.vue') },
   { path: '/menuButton', component: () => import('../demos/MenuButtonDemo.vue') },
+  { path: '/infiniteImage', component: () => import('../components/InfiniteImage.vue') },
   { path: "/:pathMatch(.*)", component: () => import("../views/NotFound.vue") },
 ]
 const history = createWebHashHistory()

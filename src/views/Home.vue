@@ -18,7 +18,8 @@ const demoList = reactive([
   { path: '/BackTop', name: 'BackTop 返回顶部按钮' },
   { path: '/bars', name: 'Bars 条形图组件' },
   { path: '/floatButton', name: 'FloatButton 悬浮按钮' },
-  { path: '/menuButton', name: 'MenuButton 菜单切换按钮' }
+  { path: '/menuButton', name: 'MenuButton 菜单切换按钮' },
+  { path: '/infiniteImage', name: '图片循环移动' }
 ])
 
 </script>
