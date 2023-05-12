@@ -25,16 +25,19 @@ const demoList = reactive([
 
 
 <style lang="scss" scoped>
-.wrapper{
+.wrapper {
   padding-left: 128px;
-  ul{
+
+  ul {
     max-height: 80vh;
     display: inline-flex;
     flex-direction: column;
     flex-wrap: wrap;
-    li{
+
+    li {
       padding: 6px;
-      &:hover{
+
+      &:hover {
         color: #6135c0;
       }
     }
