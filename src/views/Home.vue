@@ -20,8 +20,8 @@ const demoList = reactive([
   { path: '/floatButton', name: 'FloatButton 悬浮按钮' },
   { path: '/menuButton', name: 'MenuButton 菜单切换按钮' },
   { path: '/infiniteImage', name: '图片循环移动' },
-  { path: '/longList', name: '虚拟长列表' }
-
+  { path: '/longList', name: '虚拟长列表' },
+  { path: '/numberRolling', name: '数字滚动效果' }
 ])
 
 </script>

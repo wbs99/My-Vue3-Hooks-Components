@@ -23,6 +23,7 @@ const routes: RouteRecordRaw[] = [
   { path: '/menuButton', component: () => import('../demos/MenuButtonDemo.vue') },
   { path: '/infiniteImage', component: () => import('../components/InfiniteImage.vue') },
   { path: '/longList', component: () => import('../demos/LongListDemo.vue') },
+  { path: '/numberRolling', component: () => import('../demos/NumberRollingDemo.vue') },
   { path: "/:pathMatch(.*)", component: () => import("../views/NotFound.vue") },
 ]
 const history = createWebHashHistory()
