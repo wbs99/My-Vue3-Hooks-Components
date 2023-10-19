@@ -2,7 +2,9 @@
   <div class="wrapper">
     <ul>
       <li v-for="demo in demoList" :key="demo.path">
-        <router-link :to="demo.path">{{ demo.name }}</router-link>
+        <router-link :to="demo.path">
+          {{ demo.name }}
+        </router-link>
       </li>
     </ul>
   </div>
@@ -21,11 +23,10 @@ const demoList = reactive([
   { path: '/menuButton', name: 'MenuButton 菜单切换按钮' },
   { path: '/infiniteImage', name: '图片循环移动' },
   { path: '/longList', name: '虚拟长列表' },
-  { path: '/numberRolling', name: '数字滚动效果' }
+  { path: '/numberRolling', name: '数字滚动效果' },
+  { path: '/aside', name: '可拉伸的 Aside' }
 ])
-
 </script>
-
 
 <style lang="scss" scoped>
 .wrapper {
