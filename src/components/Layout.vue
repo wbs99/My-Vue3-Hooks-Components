@@ -8,9 +8,9 @@
 </template>
 
 <script lang="ts" setup>
-import Nav from './Nav.vue'
+import Nav from './Nav.vue';
 
-const props = defineProps({
+defineProps({
   classPrefix: {
     type: String
   }

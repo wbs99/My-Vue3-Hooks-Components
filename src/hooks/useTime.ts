@@ -1,5 +1,6 @@
 import dayjs from 'dayjs'
-import quarterOfYear from 'dayjs/plugin/quarterOfYear';
+import quarterOfYear from 'dayjs/plugin/quarterOfYear'
+
 dayjs.extend(quarterOfYear)
 
 // 获取当月第一天
@@ -64,18 +65,21 @@ export const getLastDayOfSeason = () => {
 
 // 美化时间
 export const beautifyTime = (DateString: string) => {
-  let dateObj = typeof DateString === 'object' ? DateString : new Date(DateString)
-  let time = dateObj.getTime()
-  let now = Date.now()
-  let space = now - time
+  const dateObj = typeof DateString === 'object' ? DateString : new Date(DateString)
+  const time = dateObj.getTime()
+  const now = Date.now()
+  const space = now - time
   let str = ''
   if (space < 60 * 1000) {
     str = '刚刚'
-  } else if (space < 3600 * 1000) {
+  }
+  else if (space < 3600 * 1000) {
     str = `${Math.floor(space / 60000)} 分钟前`
-  } else if (space < 3600 * 1000 * 24) {
+  }
+  else if (space < 3600 * 1000 * 24) {
     str = `${Math.floor(space / (3600 * 1000))} 小时前`
-  } else {
+  }
+  else {
     str = `${Math.floor(space / (3600 * 1000 * 24))} 天前`
   }
   return str

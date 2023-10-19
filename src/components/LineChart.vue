@@ -1,12 +1,11 @@
 <!-- 折线图组件 -->
 <template>
-  <div ref="lineChartDivRef" class="line-chart">
-  </div>
+  <div ref="lineChartDivRef" class="line-chart" />
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts';
+import { onMounted, ref } from 'vue';
 
 const lineChartDivRef = ref<HTMLElement>()
 onMounted(() => {
@@ -20,11 +19,11 @@ onMounted(() => {
       type: 'category',
       boundaryGap: false,
       data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
-      //axisTick: { show: false }, //坐标轴刻度
+      // axisTick: { show: false }, //坐标轴刻度
     },
     yAxis: {
       type: 'value',
-      axisLine: { show: true }, //是否显示 y 轴
+      axisLine: { show: true }, // 是否显示 y 轴
       splitLine: { show: false },
       // splitLine: { lineStyle: { color: '#073E78' } },
       axisLabel: {
@@ -51,7 +50,6 @@ onMounted(() => {
   })
 })
 </script>
-
 
 <style lang="scss" scoped>
 .line-chart{

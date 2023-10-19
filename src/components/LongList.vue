@@ -1,13 +1,15 @@
 <template>
-  <div class="wrapper" @scroll="onScroll" ref="wrapperRef">
+  <div ref="wrapperRef" class="wrapper" @scroll="onScroll">
     <div ref="containerRef" :style="{ paddingTop: `${paddingTop}px` }">
-      <div class="item" v-for="(item, index) in visibleList" :key="index">{{ item }}</div>
+      <div v-for="(item, index) in visibleList" :key="index" class="item">
+        {{ item }}
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ref, computed, onMounted } from "vue";
+import { computed, onMounted, ref } from 'vue';
 
 const props = defineProps({
   data: Array,
@@ -39,7 +41,8 @@ onMounted(() => {
 
 let timer = 0
 const onScroll = function (e: any) {
-  if (timer) clearTimeout(timer)
+  if (timer)
+    clearTimeout(timer)
   timer = setTimeout(() => {
     const startValue = Math.floor(e.target.scrollTop / itemHeight.value)
     const buff = startValue > props.prepareTopCount ? props.prepareTopCount : startValue
@@ -48,8 +51,6 @@ const onScroll = function (e: any) {
     paddingTop.value = start.value * itemHeight.value
   }, 200)
 }
-
-
 </script>
 
 <style>

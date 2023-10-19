@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-
 defineProps({
   number: {
     type: Number,
@@ -13,7 +12,6 @@ defineProps({
     required: true,
   }
 })
-
 </script>
 
 <style lang="scss" scoped>
@@ -40,4 +38,3 @@ defineProps({
   transition: all 1.5s;
 }
 </style>
-

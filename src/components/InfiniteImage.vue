@@ -2,7 +2,7 @@
   <div class="w-600px h-100px overflow-hidden relative b-1 b-solid b-red m-y-0 m-x-auto">
     <div class="slider flex absolute top-0 left-0 bottom-0" :style="{ animationDuration: duration }">
       <div v-for="image in doubleImages" :key="image.id" class="w-20% flex-shrink-0">
-        <img :src="image.src" alt="slide" class="block w-100% h-auto p-r-12px" />
+        <img :src="image.src" alt="slide" class="block w-100% h-auto p-r-12px">
       </div>
     </div>
   </div>

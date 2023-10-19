@@ -1,12 +1,11 @@
 <!-- 饼图组件 -->
 <template>
-  <div ref="pieChartDivRef" class="pie-chart">
-  </div>
+  <div ref="pieChartDivRef" class="pie-chart" />
 </template>
 
 <script lang="ts" setup>
-import { onMounted, ref } from 'vue'
-import * as echarts from 'echarts'
+import * as echarts from 'echarts';
+import { onMounted, ref } from 'vue';
 
 const pieChartDivRef = ref<HTMLElement>()
 onMounted(() => {
@@ -40,7 +39,6 @@ onMounted(() => {
   })
 })
 </script>
-
 
 <style lang="scss" scoped>
 .pie-chart{

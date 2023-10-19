@@ -17,8 +17,6 @@
 
 <script lang="ts" setup>
 import Icon from './Icon.vue';
-
-
 </script>
 
 <style lang="scss" scoped>

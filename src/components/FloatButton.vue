@@ -1,11 +1,12 @@
 <template>
-  <div class='floatButton'>
+  <div class="floatButton">
     <Icon :name="props.iconName" />
   </div>
 </template>
 
 <script lang="ts" setup>
-import Icon from './Icon.vue'
+import Icon from './Icon.vue';
+
 const props = defineProps({
   iconName: {
     type: String,
@@ -13,7 +14,6 @@ const props = defineProps({
   }
 })
 </script>
-
 
 <style lang="scss" scoped>
 .floatButton {

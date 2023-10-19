@@ -1,18 +1,18 @@
 <template>
   <div class="wrapper" @touchmove="onTouchMove">
     <h4>长按 pink 区域即可执行 onLongPress 函数</h4>
-    <div class="radius" @touchstart="onTouchStart" @touchend="onTouchEnd">
-    </div>
+    <div class="radius" @touchstart="onTouchStart" @touchend="onTouchEnd" />
   </div>
 </template>
 
-<script lang="ts" setup>import { useOnLongPress } from '../hooks/useLongPress';
+<script lang="ts" setup>
+import { useOnLongPress } from '../hooks/useLongPress';
+
 const onLongPress = () => {
   console.log('这是长按')
 }
 const { onTouchStart, onTouchMove, onTouchEnd } = useOnLongPress(onLongPress)
 </script>
-
 
 <style lang="scss" scoped>
 .wrapper{

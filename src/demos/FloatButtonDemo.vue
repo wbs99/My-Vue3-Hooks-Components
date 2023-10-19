@@ -6,9 +6,7 @@
 
 <script lang="ts" setup>
 import FloatButton from '../components/FloatButton.vue';
-
 </script>
-
 
 <style lang="scss" scoped>
 

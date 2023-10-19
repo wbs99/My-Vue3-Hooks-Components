@@ -1,6 +1,6 @@
 <template>
   <h4>观察控制台 console 即可</h4>
-  <div ref="divRef" class="wrapper"></div>
+  <div ref="divRef" class="wrapper" />
 </template>
 
 <script lang="ts" setup>
@@ -20,7 +20,6 @@ watchEffect(() => {
   }
 })
 </script>
-
 
 <style lang="scss" scoped>
 .wrapper{

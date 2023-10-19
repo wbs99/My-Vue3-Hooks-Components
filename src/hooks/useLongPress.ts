@@ -1,4 +1,4 @@
-import { ref } from "vue"
+import { ref } from 'vue'
 
 export const useOnLongPress = (onLongPress: () => void) => {
   const timer = ref<number>()
@@ -15,8 +15,8 @@ export const useOnLongPress = (onLongPress: () => void) => {
 
   const onTouchMove = (e: TouchEvent) => {
     const pointedElement = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY)
-    if (currentTag.value !== pointedElement &&
-      currentTag.value?.contains(pointedElement) === false) {
+    if (currentTag.value !== pointedElement
+      && currentTag.value?.contains(pointedElement) === false) {
       clearTimeout(timer.value)
     }
   }

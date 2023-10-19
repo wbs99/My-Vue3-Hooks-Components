@@ -117,12 +117,10 @@
       <p>1</p>
     </div>
     <Transition>
-      <div class="back-top" @click="backTop" v-if="buttonVisible === true">
+      <div v-if="buttonVisible === true" class="back-top" @click="backTop">
         <Icon name="backTop" />
       </div>
     </Transition>
-
-
   </div>
 </template>
 
@@ -134,19 +132,20 @@ const buttonVisible = ref(false)
 const backTop = () => {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
-  });
+    behavior: 'smooth'
+  })
 }
 const onScroll = () => {
   const rootElement = document.documentElement
   const scrollTotal = rootElement.scrollHeight - rootElement.clientHeight
   if ((rootElement.scrollTop / scrollTotal) > 0.2) {
     buttonVisible.value = true
-  } else {
+  }
+  else {
     buttonVisible.value = false
   }
 }
-document.addEventListener("scroll", onScroll)
+document.addEventListener('scroll', onScroll)
 </script>
 
 <style lang="scss" scoped>

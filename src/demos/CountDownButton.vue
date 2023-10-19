@@ -15,9 +15,7 @@ const { startCount, isCounting, count } = useTimeCount(3)
 const onClickSendValidationCode = () => {
   startCount()
 }
-
 </script>
-
 
 <style lang="scss" scoped>
   button {

@@ -1,8 +1,9 @@
-import { computed, onMounted, onUnmounted, ref, Ref } from "vue";
+import type { Ref } from 'vue'
+import { computed, onMounted, onUnmounted, ref } from 'vue'
 
 type Point = {
-  x: number;
-  y: number;
+  x: number
+  y: number
 }
 interface Options {
   beforeStart?: (e: TouchEvent) => void
@@ -29,7 +30,8 @@ export const useSwiper = (element: Ref<HTMLElement | undefined>, options?: Optio
     const { x, y } = distance.value
     if (Math.abs(x) > Math.abs(y)) {
       return x > 0 ? 'right' : 'left'
-    } else {
+    }
+    else {
       return y > 0 ? 'down' : 'up'
     }
   })

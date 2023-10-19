@@ -2,14 +2,13 @@
 
 <template>
   <div class="bar">
-    <div class="bar_inner"></div>
+    <div class="bar_inner" />
   </div>
 </template>
 
 <script lang="ts" setup>
 
 </script>
-
 
 <style lang="scss" scoped>
 .bar {

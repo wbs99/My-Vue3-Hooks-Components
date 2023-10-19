@@ -1,7 +1,7 @@
 <template>
   <div class="box">
     <div class="imgList">
-      <img :src="img.src" v-for="img in imgList" :key="img.id">
+      <img v-for="img in imgList" :key="img.id" :src="img.src">
     </div>
   </div>
 </template>
@@ -39,10 +39,7 @@ const imgList = reactive([
     src: 'src/assets/icons/7.svg'
   },
 ])
-
-
 </script>
-
 
 <style lang="scss" scoped>
   .box {
@@ -72,5 +69,4 @@ const imgList = reactive([
       transform: translateX(-50%);
     }
   }
-
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <div class="menu-button" :class="{ collapse: !props.collapse }" @click="buttonStatusToggle">
-  </div>
+  <div class="menu-button" :class="{ collapse: !props.collapse }" @click="buttonStatusToggle" />
 </template>
 
 <script lang="ts" setup>
@@ -9,8 +8,8 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
-});
-const emits = defineEmits(["update:collapse"]);
+})
+const emits = defineEmits(['update:collapse'])
 const buttonStatusToggle = () => {
   emits('update:collapse', !props.collapse)
 }
